@@ -1,7 +1,7 @@
 ## mily-ui
 
 <p style="text-align:center">
-  <img src="https://github.com/milyyy/mily-ui/mily-ui_logo.svg">
+  <img src="https://github.com/milyyy/mily-ui/blob/master/mily-ui-logo.svg">
 </p>
 
 
