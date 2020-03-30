@@ -43,5 +43,5 @@ vue-cli构建: https://cli.vuejs.org/zh/guide/cli-service.html#vue-cli-service-b
 webpack打包： https://webpack.js.org/configuration/externals/  
 eslint自动修复: https://dev.to/sophiabrandt/format-and-fix-all-files-with-prettier-and-eslint-recursively-1gld  
 JSX相关: https://stackoverflow.com/questions/31284169/parse-error-adjacent-jsx-elements-must-be-wrapped-in-an-enclosing-tag  
-Svg图标: 自己用PS制作的  
+ 
 

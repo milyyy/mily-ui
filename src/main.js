@@ -1,12 +1,12 @@
 import Button from '../packages/button/index';
-
+// import "../packages/theme-chalk/src/styles/index";
 const components = [
   Button
 ];
 
 const install = function (Vue, opts = {}) {
-  console.log('vue',Vue);
-  
+  console.log('vue', Vue);
+
   // 组件注册 install components
   components.forEach(component => {
     console.log(component);

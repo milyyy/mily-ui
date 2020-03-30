@@ -4,13 +4,13 @@
  * https://webpack.js.org/configuration/resolve/#resolvealias
 */
 var path = require('path');
-var fs = require('fs');
+// var fs = require('fs');
 var nodeExternals = require('webpack-node-externals');
 var externals = {};
 
-Object.keys(Components).forEach(function(key) {
-  externals[`mily-ui/packages/${key}`] = `mily-ui/lib/${key}`;
-});
+// Object.keys(Components).forEach(function(key) {
+//   externals[`mily-ui/packages/${key}`] = `mily-ui/lib/${key}`;
+// });
 
 
 externals = [Object.assign({
