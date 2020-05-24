@@ -1,7 +1,7 @@
-import test from './src/test';
+import mTest from './src/mTest';
 
-test.install = Vue => {
-  Vue.component(test.name, test)
+mTest.install = Vue => {
+  Vue.component(mTest.name, mTest)
 }
 
-export default test
+export default mTest
