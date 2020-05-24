@@ -1,10 +1,14 @@
- {
+{
   "name": "mily-ui",
   "version": "0.0.1",
   "private": false,
   "author": "milyyy",
+  "license": "MIT",
   "main": "lib/mily-ui.umd.min.js",
-  "keywords": ["mily-ui","mily"],
+  "keywords": [
+    "mily-ui",
+    "mily"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
