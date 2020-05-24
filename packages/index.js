@@ -1,18 +1,18 @@
 // 全局安装
-import mTest from "./test";
-import mAlert from "./alert";
+import Test from "./test";
+import Alert from "./alert";
 
 const components = [ 
-  mTest,
-  mAlert
+  Test,
+  Alert
 ];
 
 const install  = function (Vue) {
   // 判断是否安装
   if (install.installed) return
-  install.installed = true
   // 遍历安装每一个
   components.map(component => Vue.component(component.name, component))
+  install.installed = true
   // 或 components.map(component => Vue.use(component)) 
 } 
 
