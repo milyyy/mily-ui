@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "mTest",
+  name: "MTest",
   data() {
     return {
       num: 0
