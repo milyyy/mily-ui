@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: "Alert"
+  name: "mAlert"
 }
 </script>

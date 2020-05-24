@@ -1,5 +1,5 @@
 ## mily-ui
-
+![avatar](https://github.com/milyyy/mily-ui/master/public/favicon.ico)
 ### 安装(Install)
 npm install mily-ui -S
 
