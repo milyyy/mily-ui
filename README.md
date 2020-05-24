@@ -9,6 +9,8 @@ import Vue from 'vue'
 
 // 全局引入(global use)
 import MilyUI from 'mily-ui'
+import 'mily-ui/lib/mily-ui.css'
+
 Vue.use(MilyUI);
 
 // 局部引入(part use)
