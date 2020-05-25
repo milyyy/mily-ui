@@ -18,7 +18,10 @@
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name mily-ui --dest lib src/main.js",
-    "dist": "webpack --config build/webpack.config.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run lib"
+    "config": "webpack --config build/webpack.config.js",
+    "common": "webpack --config build/webpack.common.js",
+    "component": "webpack --config build/webpack.component.js",
+    "dist": "npm run config && npm run common && npm run component && npm run lib"
   },
   "dependencies": {
     "vue": "^2.6.11",
@@ -52,6 +55,7 @@
     "eslint-loader": "^3.0.3",
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-vue": "^6.2.2",
+    "extract-text-webpack-plugin": "^3.0.2",
     "jest": "^26.0.1",
     "node-sass": "^4.14.1",
     "progress-bar-webpack-plugin": "^2.1.0",

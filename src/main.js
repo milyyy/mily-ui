@@ -8,12 +8,12 @@ const components = [
 ];
 
 const install  = function (Vue) {
-  // 判断是否安装
-  if (install.installed) return
-  // 遍历安装每一个
+  // 如果安装则无需重复安装
+  // if (install.installed) return
+  // 遍历，以组件内定义的name属性值注册组件
   components.map(component => Vue.component(component.name, component))
-  install.installed = true
-  // 或 components.map(component => Vue.use(component)) 
+  // components.map(component => Vue.use(component)) 
+  // install.installed = true
 } 
 
 // 检测到 Vue 才执行
@@ -21,7 +21,13 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
+/**
+ * 全局安装使用default
+ * 按需加载则不要default
+ * 
+*/
 export default {
   install,
-  ...components
+  Test,
+  Alert
 }

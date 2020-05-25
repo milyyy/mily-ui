@@ -1,7 +1,7 @@
 const path = require('path');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-
+// const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 const Components = require('../components.json');
 const config = require('./config');
@@ -66,7 +66,10 @@ const webpackConfig = {
   },
   plugins: [
     new ProgressBarPlugin(),
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    // new ExtractTextPlugin({
+    //   filename: '/theme/[name].css'
+    // })
   ]
 };
 

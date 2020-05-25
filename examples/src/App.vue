@@ -2,6 +2,7 @@
   <div id="app">
     dd
     <m-test></m-test>
+    <m-alert></m-alert>
   </div>
 </template>
 
