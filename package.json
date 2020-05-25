@@ -4,31 +4,38 @@
   "private": false,
   "author": "milyyy",
   "license": "MIT",
-  "main": "lib/mily-ui.umd.min.js",
+  "main": "lib/mily-ui.common.js",
+  "files": [
+    "lib",
+    "src",
+    "packages"
+  ],
   "keywords": [
     "mily-ui",
     "mily"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name mily-ui --dest lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name mily-ui --dest lib packages/index.js",
+    "theme": "vue-cli-service build packages/theme-chalk/lib lib/theme-chalk",
+    "dist": "npm run lint && webpack --config build/webpack.config.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run lib && npm run theme"
   },
   "dependencies": {
-    "core-js": "^3.6.4",
     "vue": "^2.6.11",
-    "vue-router": "^3.1.5",
-    "vuex": "^3.1.2"
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.6",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-plugin-router": "~4.2.0",
     "@vue/cli-plugin-vuex": "~4.2.0",
     "@vue/cli-service": "~4.2.0",
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^26.0.1",
     "babel-loader": "^7.1.5",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-component": "^1.1.1",
@@ -45,9 +52,15 @@
     "eslint-loader": "^3.0.3",
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-vue": "^6.2.2",
+    "jest": "^26.0.1",
     "node-sass": "^4.12.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "regenerator-runtime": "^0.13.5",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-loader": "^15.9.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
   },
   "repository": {
     "type": "git",

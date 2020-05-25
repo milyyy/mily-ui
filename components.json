@@ -1,0 +1,4 @@
+{
+  "test": "./packages/test/index.js",
+  "alert": "./packages/test/index.js"
+}

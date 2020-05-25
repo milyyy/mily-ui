@@ -16,13 +16,12 @@ const install  = function (Vue) {
   // 或 components.map(component => Vue.use(component)) 
 } 
 
-// 检测到 Vue 才执行，毕竟我们是基于 Vue 的
+// 检测到 Vue 才执行
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
 export default {
   install,
-  // 所有组件，必须具有 install，才能使用 Vue.use()
   ...components
 }

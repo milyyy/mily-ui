@@ -1,16 +1,6 @@
 {
   "presets": [
-    [
-      "env",
-      {
-        "loose": true,
-        "modules": false,
-        "targets": {
-          "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
-        }
-      }
-    ],
-    "stage-2"
+    ["@babel/preset-env"]
   ],
   "plugins": ["transform-vue-jsx"],
   "env": {
@@ -31,7 +21,7 @@
         ["module-resolver", {
           "root": ["mily-ui"],
           "alias": {
-            "element-ui/src": "mily-ui/lib"
+            "mily-ui/src": "mily-ui/lib"
           }
         }]
       ]
