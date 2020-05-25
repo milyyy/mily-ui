@@ -17,7 +17,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name mily-ui --dest lib packages/index.js",
+    "lib": "vue-cli-service build --target lib --name mily-ui --dest lib src/main.js",
     "dist": "webpack --config build/webpack.config.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run lib"
   },
   "dependencies": {

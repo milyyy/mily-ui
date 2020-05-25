@@ -16,7 +16,7 @@ externals = [Object.assign({
 exports.externals = externals;
 
 exports.alias = {
-  main: path.resolve(__dirname, '../packages'),
+  main: path.resolve(__dirname, '../src'),
   packages: path.resolve(__dirname, '../packages'),
   examples: path.resolve(__dirname, '../examples'),
   'mily-ui': path.resolve(__dirname, '../')

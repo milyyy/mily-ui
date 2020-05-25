@@ -7,16 +7,14 @@ const config = require('./config');
 module.exports = {
   mode: 'production',
   entry: {
-    app: ['./packages/index.js']
+    app: ['./src/main.js']
   },
   output: {
     // process.cwd() 程序命令(终端)运行的当前目录
     path: path.resolve(process.cwd(), './lib'),
     publicPath: '/dist/',
-    // finename: 'mily-ui.common.js',
     chunkFilename: '[name].js',
     library: 'MILY',
-    libraryTarget: 'commonjs2'
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],

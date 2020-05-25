@@ -1,6 +1,6 @@
 // 全局安装
-import Test from "./test";
-import Alert from "./alert";
+import Test from "../packages/test";
+import Alert from "../packages/alert";
 
 const components = [ 
   Test,
