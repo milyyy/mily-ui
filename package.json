@@ -18,11 +18,11 @@
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name mily-ui --dest lib packages/index.js",
-    "theme": "vue-cli-service build packages/theme-chalk/lib lib/theme-chalk",
-    "dist": "npm run lint && webpack --config build/webpack.config.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run lib && npm run theme"
+    "dist": "webpack --config build/webpack.config.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run lib"
   },
   "dependencies": {
     "vue": "^2.6.11",
+    "vue-loader-plugin": "^1.3.0",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
   },
@@ -53,10 +53,11 @@
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-vue": "^6.2.2",
     "jest": "^26.0.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.14.1",
     "progress-bar-webpack-plugin": "^2.1.0",
     "regenerator-runtime": "^0.13.5",
     "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
     "vue-loader": "^15.9.2",
     "vue-template-compiler": "^2.6.11",
     "webpack-cli": "^3.3.11",

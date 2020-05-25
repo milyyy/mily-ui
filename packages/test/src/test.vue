@@ -22,7 +22,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.test {
-  color: red;
-}
+@import "../../theme-chalk/src/test"
 </style>
