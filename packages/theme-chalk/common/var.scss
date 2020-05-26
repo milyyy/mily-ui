@@ -5,22 +5,37 @@ $warning: #60460F !default;
 $danger: #E44545 !default;
 $info: #C9CACC !default;
 
+// color
+$--color-white: #fff !default;
+$--color-black: #000 !default;
+
+$--color-primary: $primary;
+$--color-success: $success;
+$--color-warning: $warning;
+$--color-danger: $danger;
+$--color-info: $info;
+
+// border
+$--border-width-base: 1px !default;
+$--border-style-base: solid !default;
+
 
 
 // size
 $--button-font-size: 12px !default;
-$--button-padding-vertical: 12px !default;
-$--button-padding-horizontal: 20px !default;
+$--button-padding-vertical: 6px !default;
+$--button-padding-horizontal: 12px !default;
 
 $mini-font-size: 12px !default;
-$mini-padding-vertical: 7px !default;
-$mini-padding-horizontal: 15px !default;
+$mini-padding-vertical: 6px !default;
+$mini-padding-horizontal: 12px !default;
 
-$small-font-size: 12px !default;
-$small-padding-vertical: 9px !default;
-$small-padding-horizontal: 15px !default;
+$small-font-size: 14px !default;
+$small-padding-vertical: 8px !default;
+$small-padding-horizontal: 14px !default;
 
-$medium-font-size: 12px !default;
+$medium-font-size: 16px !default;
 $medium-padding-vertical: 10px !default;
 $medium-padding-horizontal: 20px !default;
+
 

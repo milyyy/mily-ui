@@ -11,23 +11,38 @@
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
+  margin-left: 10px;
+  font-size: $--button-font-size;
+  padding: $--button-padding-vertical $--button-padding-horizontal;
+  color: #666;
+  background: $--color-white;
+  border: 1px solid #f1f1f1;
 }
 
 // color
 .m-button--success {
-  border: 1px solid $success;
+  color: #fff;
+  background: $success;
+  &:active {
+    background: rgba($color: $success, $alpha: .8);
+    border-color: $success;
+    outline: none;
+  }
 }
 .m-button--primary {
-  background-color: 1px solid $primary;
+  color: #fff;
+  background: $primary;
 }
 .m-button--warning {
-  background-color: 1px solid $warning;
+  color: #fff;
+  background: $warning;
 }
 .m-button--danger {
-  background-color: 1px solid $danger;
+  color: #fff;
+  background: $danger;
 }
 .m-button--info {
-  background-color: 1px solid $info;
+  background: $info;
 }
 
 
