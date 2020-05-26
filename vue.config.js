@@ -8,6 +8,17 @@ module.exports = {
       filename: 'index.html'
     }
   },
+  devServer: {
+    host: "localhost",
+    https: false,
+    proxy: {
+      '/api': {
+        target: 'http://localhost',
+        ws: true,
+        changeOrigin: true
+      }
+    }
+  },
   chainWebpack: config => {
     config.resolve.alias
       .set('@', path.resolve('examples'))
