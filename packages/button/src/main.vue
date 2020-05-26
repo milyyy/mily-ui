@@ -1,16 +1,6 @@
 <template>
   <div>
-    <button
-      class="m-button"
-      :class="[
-        type ? 'm-button--' + type : '',
-        buttonSize ? 'm-button--' + buttonSize : '',
-      ]"
-      @click="handleClick">
-      <span>
-        <slot></slot>
-      </span>
-    </button>
+    <button>o</button>
   </div>
 </template>
 
@@ -38,14 +28,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.mc-button {
-  box-sizing: border-box;
-  outline: none;
-  margin: 0;
-  transition: 0.1s;
-  font-weight: 500;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-}
+@import "../../theme-chalk/button.scss"
 </style>

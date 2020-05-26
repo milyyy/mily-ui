@@ -1,10 +1,12 @@
 // 全局安装
 import Test from "./test";
 import Alert from "./alert";
+import Button from "./button";
 
 const components = [ 
   Test,
-  Alert
+  Alert,
+  Button
 ];
 
 const install  = function (Vue) {
