@@ -6,8 +6,9 @@ import App from "./App.vue"
 // Vue.use(milyUI)
 
 // 按需引入
-import { Test }  from "../../src/main"
+import { Test,Alert }  from "../../src/main"
 Vue.use(Test)
+Vue.use(Alert)
 console.log('com:',Test);
 
 

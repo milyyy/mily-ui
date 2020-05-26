@@ -26,7 +26,7 @@ if (typeof window !== 'undefined' && window.Vue) {
  * 按需加载则不要default
  * 
 */
-export default {
+export {
   install,
   Test,
   Alert
