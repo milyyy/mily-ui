@@ -12,52 +12,142 @@
   white-space: nowrap;
   cursor: pointer;
   margin-left: 10px;
+  margin-top: 4px;
   font-size: $--button-font-size;
   padding: $--button-padding-vertical $--button-padding-horizontal;
   color: #666;
   background: $--color-white;
-  border: 1px solid #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  &.is-disabled {
+    cursor: not-allowed;
+  }
 }
 
 // color
 .m-button--success {
   color: #fff;
   background: $success;
+  border: $--border-width-base $--border-style-base $--border-style-success-color;
+  &:hover,
   &:active {
     background: rgba($color: $success, $alpha: .8);
     border-color: $success;
     outline: none;
   }
+  &.is-disabled {
+    background-color: $--button-success-background-color;
+    border-color: $--button-success-border-color;
+    color: $--button-success-font-color;
+   cursor: not-allowed;
+  }
 }
 .m-button--primary {
   color: #fff;
   background: $primary;
+  border: $--border-width-base $--border-style-base $--border-style-primary-color;
+  &:hover,
+  &:active {
+    background: rgba($color: $primary, $alpha: .8);
+    border-color: $primary;
+    outline: none;
+  }
+  &.is-disabled {
+    background-color: $--button-primary-background-color;
+    border-color: $--button-primary-border-color;
+    color: $--button-primary-font-color;
+   
+  }
 }
 .m-button--warning {
   color: #fff;
   background: $warning;
+  border: $--border-width-base $--border-style-base $--border-style-warning-color;
+  &:hover,
+  &:active {
+    background: rgba($color: $warning, $alpha: .8);
+    border-color: $warning;
+    outline: none;
+  }
+  &.is-disabled {
+    background-color: $--button-warning-background-color;
+    border-color: $--button-warning-border-color;
+    color: $--button-warning-font-color;
+   
+  }
 }
 .m-button--danger {
   color: #fff;
   background: $danger;
+  border: $--border-width-base $--border-style-base $--border-style-danger-color;
+  &:hover,
+  &:active {
+    background: rgba($color: $danger, $alpha: .8);
+    border-color: $danger;
+    outline: none;
+  }
+  &.is-disabled {
+    background-color: $--button-danger-background-color;
+    border-color: $--button-danger-border-color;
+    color: $--button-danger-font-color;
+   
+  }
 }
 .m-button--info {
   background: $info;
+  color: #fff;
+  border: $--border-width-base $--border-style-base $--border-style-info-color;
+  &:hover,
+  &:active {
+    background: rgba($color: $info, $alpha: .8);
+    border-color: $info;
+    outline: none;
+  }
+  &.is-disabled {
+    background-color: $--button-info-background-color;
+    border-color: $--button-info-border-color;
+    color: $--button-info-font-color;
+   
+  }
 }
 
 
 // size  mini | small | medium
+// pading 为6px 8px 10px, 相应可以设置circle稍微大一点
 .m-button--mini {
   font-size: $mini-font-size;
   padding: $mini-padding-vertical $mini-padding-horizontal;
+  &.is-round {
+    border-radius: 16px !important;
+  }
+  &.is-circle {
+    border-radius: 50%;
+    padding: 8px;
+  }
 }
 
 .m-button--small {
   font-size: $small-font-size;
   padding: $small-padding-vertical $small-padding-horizontal;
+  &.is-round {
+    border-radius: 16px !important;
+  }
+  &.is-circle {
+    border-radius: 50%;
+    padding: 10px;
+  }
 }
 
 .m-button--medium {
   font-size: $medium-font-size;
   padding: $medium-padding-vertical $medium-padding-horizontal;
+  &.is-round {
+    border-radius: 16px !important;
+  }
+  &.is-circle {
+    border-radius: 50%;
+    padding: 12px;
+  }
 }
+
+

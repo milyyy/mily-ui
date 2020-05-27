@@ -1,24 +1,27 @@
 // 主色
-$primary: #14C5AD !default;
-$success: #6ABC4B !default;
-$warning: #60460F !default;
-$danger: #E44545 !default;
-$info: #C9CACC !default;
+$primary: #82A6F5 !default;
+$success: #ABC327 !default;
+$warning: #E08031 !default;
+$danger: #EB3F2F !default;
+$info: #ccc !default;
 
-// color
+// color 基于主色的亮浅色调
 $--color-white: #fff !default;
 $--color-black: #000 !default;
-
-$--color-primary: $primary;
-$--color-success: $success;
-$--color-warning: $warning;
-$--color-danger: $danger;
-$--color-info: $info;
+$--color-primary: rgb(175, 198, 248);
+$--color-success: rgb(210, 223, 140);
+$--color-warning: rgb(221, 181, 149);
+$--color-danger: rgb(228, 143, 143);
+$--color-info: rgb(229, 230, 231);
 
 // border
 $--border-width-base: 1px !default;
 $--border-style-base: solid !default;
-
+$--border-style-primary-color: $primary;
+$--border-style-danger-color: $danger;
+$--border-style-success-color: $success;
+$--border-style-warning-color: $warning;
+$--border-style-info-color: $info;
 
 
 // size
@@ -38,4 +41,28 @@ $medium-font-size: 16px !default;
 $medium-padding-vertical: 10px !default;
 $medium-padding-horizontal: 20px !default;
 
+// disabled
+$--button-disabled-font-color: #C0C4CC !default;
+$--button-disabled-background-color: #fff !default;
+$--button-disabled-border-color: #EBEEF5 !default;
 
+
+$--button-primary-border-color: $--color-primary !default;
+$--button-primary-font-color: $--color-white !default;
+$--button-primary-background-color: $--color-primary !default;
+
+$--button-success-border-color: $--color-success !default;
+$--button-success-font-color: $--color-white !default;
+$--button-success-background-color: $--color-success !default;
+
+$--button-warning-border-color: $--color-warning !default;
+$--button-warning-font-color: $--color-white !default;
+$--button-warning-background-color: $--color-warning !default;
+
+$--button-danger-border-color: $--color-danger !default;
+$--button-danger-font-color: $--color-white !default;
+$--button-danger-background-color: $--color-danger !default;
+
+$--button-info-border-color: $--color-info !default;
+$--button-info-font-color: #999 !default;
+$--button-info-background-color: $--color-info !default;
